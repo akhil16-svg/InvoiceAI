@@ -1,6 +1,6 @@
 # 🎯 Invoice Intelligence Platform
 
-[![CI Pipeline](https://github.com/YOUR_USERNAME/Invoice_OCR_App/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/Invoice_OCR_App/actions/workflows/ci.yml)
+[![CI Pipeline](https://github.com/akhil16-svg/InvoiceAI/actions/workflows/ci.yml/badge.svg)](https://github.com/akhil16-svg/InvoiceAI/actions/workflows/ci.yml)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.51-FF4B4B.svg)](https://streamlit.io)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://www.docker.com/)
@@ -9,6 +9,22 @@
 An AI-powered invoice processing platform that uses OCR to extract data from invoices, detect fraud with 8+ intelligent algorithms, and provide real-time financial analytics — all through a modern dark-themed web interface.
 
 Trained and validated on **500+ real-world invoices** across retail, healthcare, logistics, and professional services.
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Why This Tool — Feature Cards
+![Features](screenshots/features.png)
+
+### Secure Authentication
+![Login](screenshots/login.png)
+
+### Real-time Analytics Dashboard
+![Analytics](screenshots/analytics.png)
 
 ---
 
@@ -49,8 +65,8 @@ Trained and validated on **500+ real-world invoices** across retail, healthcare,
 
 ### 1. Clone and setup
 ```bash
-git clone https://github.com/YOUR_USERNAME/Invoice_OCR_App.git
-cd Invoice_OCR_App
+git clone https://github.com/akhil16-svg/InvoiceAI.git
+cd InvoiceAI
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -105,7 +121,7 @@ The pipeline runs automatically on every push and pull request to `main`.
 ## 📁 Project Structure
 
 ```
-Invoice_OCR_App/
+InvoiceAI/
 ├── main.py                    # Home page & app entry point
 ├── pages/
 │   ├── 1_📤_Upload.py        # Invoice upload & OCR processing
