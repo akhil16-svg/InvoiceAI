@@ -1,0 +1,18 @@
+[theme]
+# Dark theme matching the app's custom CSS — loads before Python, eliminates
+# the white-flash on page navigation.
+base                = "dark"
+backgroundColor     = "#1a1a1a"
+secondaryBackgroundColor = "#2d2d2d"
+textColor           = "#e0e0e0"
+primaryColor        = "#00D639"
+font                = "sans serif"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true
+port = 8502
+# Note: remove the 'address' line when deploying to Streamlit Community Cloud
+# address = "127.0.0.1"   # uncomment locally to block network access
