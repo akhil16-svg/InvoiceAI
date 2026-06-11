@@ -13,6 +13,6 @@ gatherUsageStats = false
 
 [server]
 headless = true
-port = 8502
+port = 8501
 # Note: remove the 'address' line when deploying to Streamlit Community Cloud
 # address = "127.0.0.1"   # uncomment locally to block network access
