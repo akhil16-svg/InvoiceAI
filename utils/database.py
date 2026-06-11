@@ -49,8 +49,13 @@ class InvoiceDatabase:
             self._init_sqlite()
         elif db_type == 'postgres':
             if not self.pg_url:
-                raise ValueError("DATABASE_URL environment variable is missing for PostgreSQL.")
-            self._init_postgres()
+                # Fallback to SQLite gracefully if deployed without a Database URL
+                print("Warning: DATABASE_URL not found. Falling back to SQLite.")
+                self.db_type = 'sqlite'
+                self.db_path = self.db_path.replace('.postgres', '.sqlite')
+                self._init_sqlite()
+            else:
+                self._init_postgres()
     
     def _init_json(self):
         """Initialize JSON file storage"""
